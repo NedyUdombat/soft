@@ -1,0 +1,570 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
+@font-face {
+  font-family: "CerebriSansPro-Thin";
+  src: url("../fonts/Cerebri.Sans.Pro/CerebriSansPro-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "CerebriSansPro-Regular";
+  src: url("../fonts/Cerebri.Sans.Pro/CerebriSansPro-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "CerebriSansPro-SemiBold";
+  src: url("../fonts/Cerebri.Sans.Pro/CerebriSansPro-SemiBold.ttf") format("truetype");
+}
+.row {
+  margin-right: 0;
+  margin-left: 0;
+  font-family: "CerebriSansPro-Regular", sans-serif;
+}
+.row .nav {
+  position: fixed;
+  bottom: 0;
+  height: 74px;
+  background-color: rgba(244, 244, 244, 0.9);
+}
+.row .nav .list-group {
+  flex-direction: row;
+  max-width: 100vw;
+  min-width: 100vw;
+  width: 100vw;
+  border-radius: 0;
+}
+.row .nav .list-group .list-group-item {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 22px;
+  border: none;
+  color: #303030;
+  background: transparent;
+  font-family: "CerebriSansPro-Thin", sans-serif;
+}
+.row .nav .list-group .list-group-item.active {
+  background-color: transparent;
+  color: #303030;
+}
+.row .nav .list-group .list-group-item .nav-icon {
+  margin-bottom: 2px;
+}
+.row .nav .list-group .list-group-item.schedule .nav-icon {
+  height: 20px;
+  width: 18px;
+}
+.row .nav .list-group .list-group-item.history .nav-icon {
+  height: 19px;
+  width: 20px;
+}
+.row .nav .list-group .list-group-item.notifications .nav-icon {
+  height: 20px;
+  width: 17px;
+}
+.row .nav .list-group .list-group-item.chat .nav-icon {
+  height: 20px;
+  width: 20px;
+}
+.row .main {
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-top: 15px;
+}
+.row .main .tab-content .tab-pane .content .profile-div {
+  display: flex;
+  height: 35px;
+  align-items: center;
+}
+.row .main .tab-content .tab-pane .content .profile-div .profile-photo {
+  height: 35px;
+  width: 35px;
+  margin-right: 10px;
+}
+.row .main .tab-content .tab-pane .content .profile-div .greetings-text {
+  font-family: "PT Serif", serif;
+  font-size: 17px;
+  line-height: 22px;
+  color: #121212;
+  margin-bottom: 0;
+}
+.row .main .tab-content .tab-pane .content .top {
+  margin-top: 25px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 37px;
+}
+.row .main .tab-content .tab-pane .content .top .title {
+  color: #121212;
+  font-family: "PT Serif", serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 37px;
+  text-align: center;
+  margin-bottom: 0;
+}
+.row .main .tab-content .tab-pane .content .top .btn-outline-custom {
+  height: 25px;
+  width: fit-content;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  color: #E78F00;
+  box-sizing: border-box;
+  border-radius: 13px;
+  background: #FF9D0030;
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.04);
+  border: 0.8px solid #FE9B00;
+  padding: 5px 12px 5px 13px;
+}
+.row .main .tab-content .tab-pane .content .status-bars {
+  margin-bottom: 30px;
+}
+.row .main .tab-content .tab-pane .content .status-bars .status-bar {
+  height: 64px;
+  width: 100%;
+  display: flex;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+.row .main .tab-content .tab-pane .content .status-bars .status-bar .status {
+  width: 64%;
+  height: 100%;
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+  padding: 12px 15px;
+}
+.row .main .tab-content .tab-pane .content .status-bars .status-bar .status .text {
+  color: #1B1B1B;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 20px;
+  margin-bottom: 0;
+  font-family: "CerebriSansPro-Thin", sans-serif;
+}
+.row .main .tab-content .tab-pane .content .status-bars .status-bar .action {
+  width: 36%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+  flex-direction: column;
+  font-family: "CerebriSansPro-SemiBold", sans-serif;
+}
+.row .main .tab-content .tab-pane .content .status-bars .status-bar .action .text {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 17px;
+  margin-bottom: 0;
+  color: #FFF;
+}
+.row .main .tab-content .tab-pane .content .status-bars .status-bar .action .text.actual-price {
+  font-weight: normal;
+  font-family: "CerebriSansPro-Thin", sans-serif;
+  text-decoration: line-through;
+}
+.row .main .tab-content .tab-pane .content .status-bars .status-bar:last-child {
+  margin-bottom: 0;
+}
+.row .main .tab-content .tab-pane .content .status-bars .status-bar.account .status {
+  background-color: rgba(0, 194, 103, 0.1);
+}
+.row .main .tab-content .tab-pane .content .status-bars .status-bar.account .action {
+  background-color: #00C267;
+}
+.row .main .tab-content .tab-pane .content .status-bars .status-bar.meal .status {
+  background-color: #F9F5E1;
+}
+.row .main .tab-content .tab-pane .content .status-bars .status-bar.meal .action {
+  background-color: #FFBE56;
+}
+.row .main .tab-content .tab-pane .content .getting-started-div {
+  display: flex;
+  justify-content: center;
+}
+.row .main .tab-content .tab-pane .content .getting-started-div .inner-content {
+  width: 100%;
+  height: 252px;
+  border-radius: 6px;
+  background-color: rgba(207, 236, 255, 0.5);
+  padding: 20px;
+}
+.row .main .tab-content .tab-pane .content .getting-started-div .inner-content .title {
+  color: #121212;
+  font-family: "PT Serif", serif;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 20px;
+  margin: 0 0 5px 0;
+}
+.row .main .tab-content .tab-pane .content .getting-started-div .inner-content .subtitle {
+  color: #383838;
+  font-family: "CerebriSansPro-Thin", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+.row .main .tab-content .tab-pane .content .getting-started-div .inner-content .options {
+  padding-left: 15px;
+  padding-right: 13px;
+}
+.row .main .tab-content .tab-pane .content .getting-started-div .inner-content .options .call,
+.row .main .tab-content .tab-pane .content .getting-started-div .inner-content .options .play {
+  width: 50%;
+}
+.row .main .tab-content .tab-pane .content .getting-started-div .inner-content .options .call .details,
+.row .main .tab-content .tab-pane .content .getting-started-div .inner-content .options .play .details {
+  margin: 15px 0 10px;
+  line-break: anywhere;
+}
+.row .main .tab-content .tab-pane .content .getting-started-div .inner-content .options .call .action-btn,
+.row .main .tab-content .tab-pane .content .getting-started-div .inner-content .options .play .action-btn {
+  display: flex;
+  height: 20px;
+  align-items: center;
+  padding: 0;
+}
+.row .main .tab-content .tab-pane .content .getting-started-div .inner-content .options .call .action-btn .text,
+.row .main .tab-content .tab-pane .content .getting-started-div .inner-content .options .play .action-btn .text {
+  margin-bottom: 0;
+  font-family: "CerebriSansPro-Regular", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+  margin-right: 7px;
+  text-decoration: underline;
+}
+.row .main .tab-content .tab-pane .content .getting-started-div .inner-content .options .call .action-btn .arrow-icon,
+.row .main .tab-content .tab-pane .content .getting-started-div .inner-content .options .play .action-btn .arrow-icon {
+  height: 9px;
+  width: 14px;
+}
+.row .main .tab-content .tab-pane .content .getting-started-div .inner-content .options .call {
+  padding-right: 17.5px;
+}
+.row .main .tab-content .tab-pane .content .getting-started-div .inner-content .options .call .icon-container {
+  height: 40px;
+  width: 40px;
+  background-color: rgba(190, 164, 255, 0.7);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row .main .tab-content .tab-pane .content .getting-started-div .inner-content .options .call .icon-container .main-icon {
+  height: 17.33px;
+  width: 17.45px;
+}
+.row .main .tab-content .tab-pane .content .getting-started-div .inner-content .options .call .details {
+  color: #383838;
+  font-family: "CerebriSansPro-Regular", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+.row .main .tab-content .tab-pane .content .getting-started-div .inner-content .options .call .action-btn .text {
+  color: #8A5CFF;
+}
+.row .main .tab-content .tab-pane .content .getting-started-div .inner-content .options .play {
+  padding-left: 17.5px;
+}
+.row .main .tab-content .tab-pane .content .getting-started-div .inner-content .options .play .icon-container {
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 146, 101, 0.7);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row .main .tab-content .tab-pane .content .getting-started-div .inner-content .options .play .icon-container .main-icon {
+  height: 14px;
+  width: 11px;
+}
+.row .main .tab-content .tab-pane .content .getting-started-div .inner-content .options .play .details {
+  color: #383838;
+  font-family: "CerebriSansPro-Regular", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+.row .main .tab-content .tab-pane .content .getting-started-div .inner-content .options .play .action-btn .text {
+  color: #FF682A;
+}
+.row .main .tab-content .tab-pane .content .updates-section {
+  margin-top: 30px;
+}
+.row .main .tab-content .tab-pane .content .updates-section .title {
+  color: #00C267;
+  font-family: "PT Serif", serif;
+  font-size: 17px;
+  line-height: 22px;
+  margin-bottom: 16px;
+}
+.row .main .tab-content .tab-pane .content .updates-section .update {
+  display: flex;
+  height: 64px;
+  align-items: center;
+}
+.row .main .tab-content .tab-pane .content .updates-section .update .time-container {
+  margin-right: 10px;
+}
+.row .main .tab-content .tab-pane .content .updates-section .update .time-container .time {
+  color: #333;
+  font-family: "CerebriSansPro-Thin", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 15px;
+  width: max-content;
+}
+.row .main .tab-content .tab-pane .content .updates-section .update .update-text-container {
+  border-radius: 10px;
+  background-color: rgba(207, 236, 255, 0.5);
+  padding: 13px 4px 14px 15px;
+  height: 64px;
+}
+.row .main .tab-content .tab-pane .content .updates-section .update .update-text-container .update-text {
+  color: #121212;
+  font-family: "CerebriSansPro-Thin", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 19px;
+}
+
+.modal .modal-dialog {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  width: 100%;
+}
+.modal .modal-dialog .modal-content {
+  border-radius: 20px 20px 0 0;
+  border: none;
+}
+.modal .modal-dialog .modal-content .modal-header {
+  height: 87px;
+  background-color: #F9F5E1;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  padding-left: 30px;
+  border-bottom: 0;
+}
+.modal .modal-dialog .modal-content .modal-header .modal-title {
+  color: #121212;
+  font-family: "PT Serif", serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+}
+.modal .modal-dialog .modal-content .modal-header .close {
+  width: 30%;
+  height: 100%;
+  background-color: #FFBE56;
+  border-top-right-radius: inherit;
+  margin: 0;
+}
+.modal .modal-dialog .modal-content .modal-body {
+  padding: 0;
+}
+.modal .modal-dialog .modal-content .modal-body .list-group {
+  border-radius: 0;
+  border: none;
+  padding: 5px 0 0;
+}
+.modal .modal-dialog .modal-content .modal-body .list-group .list-group-item {
+  padding: 0 30px;
+  border: none;
+  display: flex;
+  height: 60px;
+  margin: 12.5px 0;
+  align-items: center;
+}
+.modal .modal-dialog .modal-content .modal-body .list-group .list-group-item:last-child {
+  margin: 12.5px 0 47px;
+}
+.modal .modal-dialog .modal-content .modal-body .list-group .list-group-item .list-group-item-image {
+  height: 60px;
+  width: 60px;
+  margin-right: 20px;
+}
+.modal .modal-dialog .modal-content .modal-body .list-group .list-group-item .name {
+  color: #303030;
+  font-family: "CerebriSansPro-Thin", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+.modal .modal-dialog .modal-content .modal-body .list-group .list-group-item .type {
+  color: #6C6C6C;
+  font-family: "CerebriSansPro-Thin", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 375px) {
+  .row .main {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .row .main .tab-content .tab-pane .content .profile-div .greetings-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .row .main .tab-content .tab-pane .content .top {
+    margin-top: 15px;
+    margin-bottom: 14px;
+  }
+  .row .main .tab-content .tab-pane .content .top .title {
+    font-size: 20px;
+  }
+  .row .main .tab-content .tab-pane .content .status-bars {
+    margin-bottom: 30px;
+  }
+  .row .main .tab-content .tab-pane .content .status-bars .status-bar .status .text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .row .main .tab-content .tab-pane .content .status-bars .status-bar .action .text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .row .main .tab-content .tab-pane .content .getting-started-div .inner-content .subtitle {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .row .main .tab-content .tab-pane .content .getting-started-div .inner-content .options {
+    padding-left: 10px;
+    padding-right: 8px;
+  }
+  .row .main .tab-content .tab-pane .content .getting-started-div .inner-content .options .call .action-btn .text,
+.row .main .tab-content .tab-pane .content .getting-started-div .inner-content .options .play .action-btn .text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .row .main .tab-content .tab-pane .content .getting-started-div .inner-content .options .call {
+    padding-right: 15.5px;
+  }
+  .row .main .tab-content .tab-pane .content .getting-started-div .inner-content .options .call .details {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .row .main .tab-content .tab-pane .content .getting-started-div .inner-content .options .play {
+    padding-left: 15.5px;
+  }
+  .row .main .tab-content .tab-pane .content .getting-started-div .inner-content .options .play .details {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .row .main .tab-content .tab-pane .content .updates-section {
+    margin-top: 30px;
+  }
+  .row .main .tab-content .tab-pane .content .updates-section .update .update-text-container .update-text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .row .main .tab-content .tab-pane .content .updates-section .update .update-text-container {
+    width: -webkit-fill-available;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .row .main {
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 100px;
+  }
+  .row .main .tab-content .tab-pane .content .status-bars {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .row .main .tab-content .tab-pane .content .status-bars .status-bar {
+    height: 64px;
+    width: 49%;
+    display: flex;
+    border-radius: 6px;
+    margin-bottom: 20px;
+  }
+  .row .main .tab-content .tab-pane .content .status-bars .status-bar .status {
+    width: 64%;
+    height: 100%;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    padding: 12px 15px;
+  }
+  .row .main .tab-content .tab-pane .content .status-bars .status-bar .status .text {
+    color: #1B1B1B;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    margin-bottom: 0;
+    font-family: "CerebriSansPro-Thin", sans-serif;
+  }
+  .row .main .tab-content .tab-pane .content .status-bars .status-bar .action {
+    width: 36%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+    flex-direction: column;
+    font-family: "CerebriSansPro-SemiBold", sans-serif;
+  }
+  .row .main .tab-content .tab-pane .content .status-bars .status-bar .action .text {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 17px;
+    margin-bottom: 0;
+    color: #FFF;
+  }
+  .row .main .tab-content .tab-pane .content .status-bars .status-bar .action .text.actual-price {
+    font-weight: normal;
+    font-family: "CerebriSansPro-Thin", sans-serif;
+    text-decoration: line-through;
+  }
+  .row .main .tab-content .tab-pane .content .status-bars .status-bar:last-child {
+    margin-bottom: 0;
+  }
+  .row .main .tab-content .tab-pane .content .status-bars .status-bar.account .status {
+    background-color: rgba(0, 194, 103, 0.1);
+  }
+  .row .main .tab-content .tab-pane .content .status-bars .status-bar.account .action {
+    background-color: #00C267;
+  }
+  .row .main .tab-content .tab-pane .content .status-bars .status-bar.meal .status {
+    background-color: #F9F5E1;
+  }
+  .row .main .tab-content .tab-pane .content .status-bars .status-bar.meal .action {
+    background-color: #FFBE56;
+  }
+  .row .main .tab-content .tab-pane .content .updates-section .update .update-text-container {
+    width: -webkit-fill-available;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

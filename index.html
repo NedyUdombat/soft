@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./assets/stylesheets/index.css">
+</head>
+<body>
+  
+  <section class="d-flex justify-content-center">
+    <div class="row w-100">
+      <div class="col-12 nav">
+        <div class="list-group" id="list-tab" role="tablist">
+          <a class="list-group-item list-group-item-action active schedule" id="list-schedule-list" data-toggle="list" href="#list-schedule" role="tab" aria-controls="schedule">
+            <img src="./assets/images/calendar.png" alt="" class="nav-icon">
+            Schedule
+          </a>
+          <a class="list-group-item list-group-item-action history" id="list-history-list" data-toggle="list" href="#list-history" role="tab" aria-controls="history">
+            <img src="./assets/images/history.png" alt="" class="nav-icon">
+            History
+          </a>
+          <a class="list-group-item list-group-item-action notifications" id="list-notifications-list" data-toggle="list" href="#list-notifications" role="tab" aria-controls="notifications">
+            <img src="./assets/images/bell.png" alt="" class="nav-icon">
+            Notifications
+          </a>
+          <a class="list-group-item list-group-item-action chat" id="list-chat-list" data-toggle="list" href="#list-chat" role="tab" aria-controls="chat">
+            <img src="./assets/images/chat.png" alt="" class="nav-icon">
+            Chat
+          </a>
+        </div>
+      </div>
+      <div class="col-12 main">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="list-schedule" role="tabpanel" aria-labelledby="list-schedule-list">
+            <div class="content">
+              <div class="profile-div">
+                <img src="./assets/images/profile-photo.png" alt="Profile picture" class="profile-photo">
+                <p class="greetings-text">Good Morning Rachael</p>
+              </div>
+
+              <div class="top">
+                <div><h2 class="title">Schedule</h2></div>
+                <div>
+                  <button class="btn btn-outline-custom">
+                    Reconfigure Services
+                  </button>
+                </div>
+              </div>
+
+              <div class="status-bars">
+                <div class="status-bar account">
+                  <div class="status">
+                    <p class="text">Your account is inactive.</p>
+                    <p class="text"><b>15% off</b> offer till June 23.</p>
+                  </div>
+                  <div class="action">
+                    <p class="text actual-price">
+                      <strike>N75,000</strike>
+                    </p>
+                    <p class="text discount-price">Pay N62,800</p>
+                  </div>
+                </div>
+                <div class="status-bar meal">
+                  <div class="status">
+                    <p class="text">View your meals for the week.</p>
+                  </div>
+                  <div class="action">
+                    <button type="button" class="btn btn-transparent w-100 h-100"  data-toggle="modal" data-target="#checkModal">
+                      <p class="text">Check 'em</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="getting-started-div">
+                <div class="inner-content">
+                  <h2 class="title">Getting Started</h2>
+                  <p class="subtitle">Let’s answer any questions you have left!</p>
+                  <div class="d-flex options">
+                    <div class="call">
+                      <div class="icon-container">
+                        <img src="./assets/images/call.png" alt="Phone Icon" class="main-icon">
+                      </div>
+                      <p class="details">Set up a call with your gardener</p>
+                      <button class="btn border-0 action-btn">
+                        <p class="text">Do it</p>
+                        <img src="./assets/images/arrow-right_purple.png" alt="arrow icon" class="arrow-icon">
+                      </button>
+                    </div>
+                    <div class="play">
+                      <div class="icon-container">
+                        <img src="./assets/images/play.png" alt="Phone Icon" class="main-icon">
+                      </div>
+                      <p class="details">Lose yourself to this video</p>
+                      <button class="btn border-0 action-btn">
+                        <p class="text">Play</p>
+                        <img src="./assets/images/arrow-right_orange.png" alt="arrow icon" class="arrow-icon">
+                      </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="updates-section">
+              <div class="title">Tomorrow</div>
+              <div class="update">
+                <div class="time-container">
+                  <p class="time">9 - 10am</p>
+                </div>
+                <div class="update-text-container">
+                  <p class="update-text">Your cleaner is coming in to give your apartment the looks.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="list-history" role="tabpanel" aria-labelledby="list-history-list">History</div>
+          <div class="tab-pane fade" id="list-notifications" role="tabpanel" aria-labelledby="list-notifications-list">Notifications</div>
+          <div class="tab-pane fade" id="list-chat" role="tabpanel" aria-labelledby="list-chat-list">Chat</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade" id="checkModal" tabindex="-1" aria-labelledby="checkModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Today's Meal</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <img src="./assets/images/akara.png" alt="Akara image" class="list-group-item-image">
+              <div>
+                <p class="name">Akara & Pap</p>
+                <p class="type">Carbohydrate</p>
+              </div>
+            </li>
+            
+            <li class="list-group-item">
+              <img src="./assets/images/jollof.png" alt="Akara image" class="list-group-item-image">
+              <div>
+                <p class="name">Jollof Rice</p>
+                <p class="type">Protein</p>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <img src="./assets/images/gastonton.png" alt="Akara image" class="list-group-item-image">
+              <div>
+                <p class="name">Gastonton</p>
+                <p class="type">Carbohydrate</p>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <img src="./assets/images/port.png" alt="Akara image" class="list-group-item-image">
+              <div>
+                <p class="name">Port Domenic</p>
+                <p class="type">Carbohydrate</p>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <img src="./assets/images/carleeville.png" alt="Akara image" class="list-group-item-image">
+              <div>
+                <p class="name">Carleeville</p>
+                <p class="type">Fat & Oils</p>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <img src="./assets/images/south.png" alt="Akara image" class="list-group-item-image">
+              <div>
+                <p class="name">South Chesleyton</p>
+                <p class="type">Vegetable</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+</body>
+</html>

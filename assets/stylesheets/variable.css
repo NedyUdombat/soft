@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
+@font-face {
+  font-family: "CerebriSansPro-Thin";
+  src: url("../fonts/Cerebri.Sans.Pro/CerebriSansPro-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "CerebriSansPro-Regular";
+  src: url("../fonts/Cerebri.Sans.Pro/CerebriSansPro-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "CerebriSansPro-SemiBold";
+  src: url("../fonts/Cerebri.Sans.Pro/CerebriSansPro-SemiBold.ttf") format("truetype");
+}
+
+/*# sourceMappingURL=variable.css.map */
