@@ -39,7 +39,7 @@
             <div class="content">
               <div class="profile-div">
                 <img src="./assets/images/profile-photo.png" alt="Profile picture" class="profile-photo">
-                <p class="greetings-text">Good Morning Rachael</p>
+                <p class="greetings-text">Good Morning Silm</p>
               </div>
 
               <div class="top">
@@ -126,7 +126,7 @@
   </section>
 
   <div class="modal fade" id="checkModal" tabindex="-1" aria-labelledby="checkModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog  modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Today's Meal</h5>
@@ -137,7 +137,8 @@
         <div class="modal-body">
           <ul class="list-group">
             <li class="list-group-item">
-              <img src="./assets/images/akara.png" alt="Akara image" class="list-group-item-image">
+              <img src="./assets/images/akara.png" alt="Akara image" class="list-group-item-image mini">
+              <!-- <img src="./assets/images/akara.png" alt="Akara image" class="list-group-item-image big"> -->
               <div>
                 <p class="name">Akara & Pap</p>
                 <p class="type">Carbohydrate</p>
@@ -152,7 +153,11 @@
               </div>
             </li>
             <li class="list-group-item">
-              <img src="./assets/images/gastonton.png" alt="Akara image" class="list-group-item-image">
+              <img src="./assets/images/gastonton.png" alt="Akara image" class="list-group-item-image mini">
+
+              <div class="image-animate-bg">
+                <img src="./assets/images/gastonton-big.png" alt="Akara image" class="list-group-item-image big">
+              </div>
               <div>
                 <p class="name">Gastonton</p>
                 <p class="type">Carbohydrate</p>
@@ -188,5 +193,6 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+  <script src="./assets/js/animate.js"></script>
 </body>
 </html>
